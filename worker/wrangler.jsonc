@@ -1,9 +1,9 @@
 {
-  // Account is chosen at deploy time via CLOUDFLARE_ACCOUNT_ID (see ../setup.sh).
+  // Account (and optional custom domain) are chosen at deploy time by ../admin.sh.
   "name": "r2share",
   "main": "worker.js",
   "compatibility_date": "2026-10-30",
   "workers_dev": true,
   "r2_buckets": [{ "binding": "BUCKET", "bucket_name": "share" }]
-  // secret: SHARE_SECRET (wrangler secret put SHARE_SECRET)
+  // secret: MASTER_KEY (set by ../admin.sh)
 }
