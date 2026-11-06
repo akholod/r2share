@@ -1,0 +1,6 @@
+__pycache__/
+*.egg-info/
+dist/
+.venv/
+worker/.wrangler/
+worker/.dev.vars
